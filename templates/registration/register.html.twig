@@ -14,5 +14,35 @@
         {{ form_row(registrationForm.agreeTerms) }}
 
         <button type="submit" class="btn">Register</button>
+		<form action="/connexion" method="POST">
+		<input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+		<input type="text" name="nom" class="form-control" id="exampleInputnom" aria-describedby="nomHelp" placeholder="Enter nom">
+		<input type="text" name="prénom" class="form-control" id="exampleInputprénom" aria-describedby="prénomHelp" placeholder="Enter prénom">
+		<input type="text" name="adresse" class="form-control" id="exampleInputadresse" aria-describedby="adresseHelp" placeholder="Enter adresse">
+		<input type="text" name="cp" class="form-control" id="exampleInputcp" aria-describedby="cpHelp" placeholder="Enter cp">
+		<input type="text" name="ville" class="form-control" id="exampleInputville" aria-describedby="villeHelp" placeholder="Enter ville">
+		<input type="text" name="tel" class="form-control" id="exampleInputtel" aria-describedby="telHelp" placeholder="Enter téléphone">
+		<p>Sélectionnez un type:</p>
+		<div>
+		<input type="radio" id="huey" name="type" value="huey" checked>
+		  <label for="huey">Entreprise</label>
+		</div>
+
+		<div>
+		  <input type="radio" id="dewey" name="type" value="dewey">
+		  <label for="dewey">Particulier</label>
+		</div>
+		<p>Sélectionnez une civilité:</p>
+		<div>
+		<input type="radio" id="huey" name="civilite" value="huey" checked>
+		  <label for="huey">M.</label>
+		</div>
+
+		<div>
+		  <input type="radio" id="dewey" name="civilite" value="dewey">
+		  <label for="dewey">Mme.</label>
+		</div>
+		<input type="password" name="pwd"class="form-control" id="exampleInputPassword1" placeholder="Password">
+		</form>
     {{ form_end(registrationForm) }}
 {% endblock %}
