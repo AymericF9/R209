@@ -18,7 +18,7 @@ class Diplome
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity=ville::class, inversedBy="diplomes")
+     * @ORM\ManyToOne(targetEntity=Ville::class, inversedBy="diplomes")
      * @ORM\JoinColumn(nullable=false)
      */
     private $ville;
